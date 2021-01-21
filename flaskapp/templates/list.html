@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>List | Sparta Global</title>
+
+    <style>
+
+        p{letter-spacing:0.13em;}
+        a{text-decoration:none; color:rgb(255, 255, 255);}
+        a:hover{color: #c7cf98; text-decoration: none;}
+        body{font-family:'Verdana', Helvetica, sans-serif;}
+
+        /* NAVIGATION BAR */
+        div#navigationbar a:hover{color: #a8a8a8; text-decoration:none;}
+        #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
+
+        div#navigationbar{width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
+        div#navigationbar > div#left{float:left;}
+
+        div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
+
+        /* FOOTER */
+        .site-footer {color:white; background-color:#01181B; position:absolute; bottom:0; right:0; left:0; width:100%; text-align:center;}
+    </style>
+
+    <!-- {% block header %}{% endblock %} -->
+</head>
+
+<body0>
+
+    <!-- Navigation bar -->
+    <div id="navigationbar" style="color:white;">
+        <div id="left">
+            <a href="https://www.spartaglobal.com/" target="_blank">
+                <img src="static/Sparta-global-logo-white.svg" width=auto height=60px/>
+            </a>
+        </div>
+
+        <div id="right">
+          <p style="letter-spacing:0.14em; align-self:flex-end; font-size:0.91em; font-weight:bold;">
+              <a href="/">Home</a>&nbsp;&nbsp;&nbsp; <a href="/team">Team</a>&nbsp;&nbsp;&nbsp; <a href="/list">Jobs List</a>&nbsp;&nbsp;&nbsp; <a href="/toolchain">ToolChain</a>
+          </p>
+      </div>
+    </div>
+
+    <!-- {% block content %} {% endblock %} -->
+    <div style="padding-top:63px; width:90%; margin-right:auto; margin-left:auto; letter-spacing:0.15em; text-align:center;">
+      <table class="table table-hover">
+          <thead style="font-size:1.2em;">
+            <tr>
+              <th scope="col">Job</th>
+              <th scope="col">Rank (Last 6 months)</th>
+              <th scope="col">Rank (Last Year)</th>
+              <th scope="col">Median Salary (Last 6 months)</th>
+              <th scope="col">Median Salary %Change (Last Year)</th>
+              <th scope="col">Historical Job Ads</th>
+              <th scope="col">Job Vacancies</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for value in joblist %}
+                <tr>
+                  <td>{{ value[0] }}</td>
+                  <td>{{ value[1] }}</td>
+                  <td>{{ value[2] }}</td>
+                  <td>{{ value[3] }}</td>
+                  <td>{{ value[4] }}</td>
+                  <td>{{ value[5] }}</td>
+                  <td>{{ value[6] }}</td>
+                </tr>
+            {% endfor %}
+
+          </tbody>
+        </table>
+  </div>
+
+
+    <footer class="py-3" style="background-color: #01181b">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright © Engineering 74 | 2021 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

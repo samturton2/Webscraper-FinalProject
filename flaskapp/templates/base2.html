@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- {% block title %} {% endblock %} -->
+    <style>
+    @media screen and (max-width:400px){
+        #navigationbar{font-size:2vw;}
+    }
+
+    p{letter-spacing:0.13em;}
+    a{text-decoration:none; color:white;}
+    a:hover{color: #000000; text-decoration:none;}
+
+    div#navigationbar a:hover{color: #949494; text-decoration:none;}
+
+    div#navigationbar{width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.91em;}
+    div#navigationbar > div#left{float:left;}
+
+    div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
+
+    /* FOOTER */
+
+    /* HOMEPAGE */
+    div#content{width:70%; margin-right:auto; margin-left:auto; padding-top:63px;}
+    div#homepageinner{width:100%; margin-right:auto; margin-left:auto; padding-top:1%; text-align:center;}
+    div#homepageinner > div#mainlinks{width:50%; display:flex; margin-left:auto; margin-right:auto; justify-content:center;}
+    </style>
+    
+    <!-- {% block header %} {% endblock %} -->
+    
+</head>
+
+
+<body style="position:relative; background-color:#ffffff;">
+    <div id="navigationbar" style="color:white;">
+        <div id="left">
+            <a href="https://www.spartaglobal.com/" target="_blank">
+                <img src="static/Sparta-global-logo-white.svg" width=auto height=60px/>
+            </a>
+        </div>
+
+        <div id="right">
+            <p style="letter-spacing:0.14em; align-self:flex-end; font-size:0.91em; font-weight:bold;">
+                <a href="/">Home</a>&nbsp;&nbsp;&nbsp; <a href="/team">Team</a>&nbsp;&nbsp;&nbsp; <a href="/list">Jobs List</a>&nbsp;&nbsp;&nbsp; <a href="/toolchain">ToolChain</a>
+            </p>
+        </div>
+    </div>
+    <!-- {% block content %}  -->
+    <!-- {% endblock %} -->
+
+    <footer class="py-3" style="background-color:#01181b;">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright © Engineering 74</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

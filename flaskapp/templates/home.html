@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Home | Sparta Global</title>
+    <style>
+        body{overflow-y: scroll; font-family:'Verdana', Helvetica, sans-serif;}
+        
+        p{letter-spacing:0.13em;}
+        a{text-decoration:none; color:rgb(4, 0, 255);}
+        a:hover{color: #000000; text-decoration:none;}
+        
+        /* NAVIGATION BAR */
+        div#navigationbar a:hover{color: #a8a8a8; text-decoration:none;}
+        #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
+        
+        div#navigationbar{z-index:1; width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
+        div#navigationbar > div#left{float:left;}
+        
+        div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
+        
+        /* HOMEPAGE */
+        div#content{width:70%; margin-right:auto; margin-left:auto; padding-top:63px;}
+        div#homepageinner{width:100%; margin-right:auto; margin-left:auto; padding-top:1%; text-align:center;}
+        div#homepageinner > div#mainlinks{width:50%; display:flex; margin-left:auto; margin-right:auto; justify-content:center;}
+    </style>
+    
+</head>
+
+<body style="position:relative; background-color:#ffffff;">
+    <div id="navigationbar" style="color:white;">
+        <div id="left">
+            <a href="https://www.spartaglobal.com/" target="_blank">
+                <img src="static/Sparta-global-logo-white.svg" width=auto height=60px/>
+            </a>
+        </div>
+
+        <div id="right">
+            <p style="letter-spacing:0.14em; align-self:flex-end; font-size:0.91em; font-weight:bold;">
+                <a href="/">Home</a>&nbsp;&nbsp;&nbsp; <a href="/team">Team</a>&nbsp;&nbsp;&nbsp; <a href="/list">Jobs List</a>&nbsp;&nbsp;&nbsp; <a href="/toolchain">ToolChain</a>
+            </p>
+        </div>
+    </div>
+    <div id="content">
+
+        <div id="homepageinner" style="font-size:1.8em; background-color:rgb(197, 218, 79);">
+            <img src="static/Sparta-global-logo-white.svg" style="width:30%">
+            <br>
+            <br>
+            <p style="font-weight:bold; font-size:2em;">Engineering 74 DevOps</p>
+            <p style="font-weight:bold; font-size:2em;">Final Project</p>
+            <p>End-to-end automation</p>
+        </div>
+
+        <div id="homepageinner" style="background-color:rgb(218, 218, 218);">
+            <p  style="font-size:2em;">Main Links</p>
+            <hr>
+            <div id="mainlinks" style="font-size:1.2em">
+                <p>
+                    <a href="https://github.com/jatkin-wasti/final-project-front-end" target="_blank">
+                        <img src="static/home/git.png" height=auto width=90px>
+                    </a>
+                    &nbsp; &nbsp; &nbsp; 
+                    <a href="https://github.com/samturton2/FinalProject-webscraper" target="_blank">
+                        <img src="static/home/git.png" height=auto width=90px>
+                    </a>
+                    &nbsp; &nbsp; &nbsp; 
+                    <a href="https://github.com/ldaijiw/eng74_final_project" target="_blank">
+                        <img src="static/home/git.png" height=auto width=90px>
+                    </a>
+                    &nbsp; &nbsp; &nbsp; 
+                    <a href="https://hub.docker.com/repository/docker/amaanhub/eng74_final_project" target="_blank">
+                        <img src="static/home/dockerhub.png" height=auto width=90px>
+                    </a>
+                </p>
+            </div>
+        </div>
+        
+    
+        <div id="homepageinner" style="text-align:center; font-size:1.2em; background-color:rgb(218, 218, 218);">
+            <p style="font-size:2em;">FAQ</p>
+            
+            <hr>
+            
+            <p style="font-weight:bold; font-size:1.4em;">What is our project about?</p>
+            <p>The project is dedicated to creating an end-to-end automated pipeline of a Python webscraper app. The app is designed to retrieve data from ItJobsWatch, return it as a CSV file and show it as a list using HTML and Python Flask.</p>
+
+            <br>
+            
+            <p style="font-weight:bold; font-size:1.4em;">What is DevOps?</p>
+            <p>DevOps focuses on cross-disciplinary practices involving the development, deployment and maintenance of a service. As the name suggests, it is the combination of the development and operations team into one. This single team would then be responsible for the entire lifecycle of a product. Read more <a href="https://www.redhat.com/en/topics/devops" target="_blank">here!</a></p>
+
+            <br>
+            
+            <p style="font-weight:bold; font-size:1.4em;">What are the main aims in DevOps?</p>
+            <p>The main aim for those working in DevOps is to ensure the quick and efficient delivery of good code. To learn more about the tools and technologies commonly used within DevOps, check out our ToolChain page that explains what we used in this project. Read more <a href="/toolchain">here!</a></p>
+            <br>
+        </div>
+    </div>
+
+    <footer class="py-3" style="background-color:#01181b;">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright © Engineering 74</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

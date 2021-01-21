@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ToolChain | Sparta Global</title>
+
+    <style>
+        html{overflow-y:scroll;}
+        p{letter-spacing:0.13em;}
+        body{font-family:'Verdana', Helvetica, sans-serif;}
+        a:hover{color: #8f8a8a;}
+        div#navigationbar a:hover{color: #a8a8a8; text-decoration:none;}
+        #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
+        
+        div#navigationbar{z-index:1; width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
+        div#navigationbar > div#left{float:left;}
+        
+        div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
+
+        .scroller{flex:0 0 auto;}
+    </style>
+
+    <style>
+        html {box-sizing:border-box;}
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+
+        .column {
+          float: left;
+          width: 33%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;}
+        }
+
+        .card{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+
+        .container{text-align: center;}
+
+        body{overflow-x:hidden; padding-top:96px;}
+
+        .aligner{ vertical-align:bottom !important}
+
+        .shadow-card:hover{box-shadow:0 3px 3px rgba(0,0,0,0.14);transition: box-shadow ease-in-out;}
+
+        .opaque:hover{opacity:0.8;}
+    </style>
+</head>
+
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <div id="navigationbar" style="color:white;">
+        <div id="left">
+            <a href="https://www.spartaglobal.com/" target="_blank">
+                <img src="static/Sparta-global-logo-white.svg" width=auto height=60px/>
+            </a>
+        </div>
+
+        <div id="right">
+            <p style="letter-spacing:0.14em; align-self:flex-end; font-size:0.91em; font-weight:bold;">
+                <a href="/">Home</a>&nbsp;&nbsp;&nbsp; <a href="/team">Team</a>&nbsp;&nbsp;&nbsp; <a href="/list">Jobs List</a>&nbsp;&nbsp;&nbsp; <a href="/toolchain">ToolChain</a>
+            </p>
+        </div>
+    </div>
+
+    
+
+    <div style="width:100%;">
+
+        <div style="display:flex; flex-wrap:nowrap; overflow-x:auto; text-align:center; padding-top:24px;">
+            
+
+            <div class="col-lg-3 col-md-6 mb-4 scroller">
+                <div class="shadow-card card h-100">
+                   <img class="opaque card-img-top text-center" src="static/square_logos/ec2_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+                   <div class="card-body">
+                       <h2>AWS EC2</h2>
+                       <h4 class="card-title">Cloud Computing</h4>
+                       <p class="card-text">Amazon Web Services is a hugely popular cloud provider,
+                           that allows for simple scalability as well as robust security. We have hosted
+                           our network infrastructure on AWS, running our deployed application within an EC2 instance.</p>
+                        </div>
+                        <div class="card-footer" style="height:80px;">
+                            <a href="https://aws.amazon.com/" class="aligner btn btn-primary">Find Out More!</a>
+                            
+                        </div>
+                 </div>
+                </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 scroller">
+            <div class="shadow-card card h-100">
+               <img class="opaque card-img-top text-center" src="static/square_logos/s3_logo.svg" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+               <div class="card-body">
+                   <h2>AWS S3</h2>
+                   <h4 class="card-title">Cloud Computing</h4>
+                   <p class="card-text">Within AWS, we have used their Simple Storage Service to store past versions of scraped data. 
+                       The main aspect of this choice was the great integration S3 has with monitoring services like CloudWatch as well as giving us great flexibility when it comes to storage.
+                       Deciding on adding a database was primarily driven by the need for a disaster recovery plan, in cases where the website might go down etc.
+                   </p>
+                    </div>
+                    <div class="card-footer" style="height:80px;">
+                        <a href="https://aws.amazon.com/" class="aligner btn btn-primary">Find Out More!</a>
+                        
+                    </div>
+             </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 scroller">
+                <div class="shadow-card card h-100">
+                    <img class="opaque card-img-top text-center" src="static/square_logos/jenkins_logo_cropped.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+                    <div class="card-body">
+                        <h2>Jenkins</h2>
+                        <h4 class="card-title">Automation Server</h4>
+                        <p class="card-text">Jenkins is an open source automation server that was used to create the CI/CD pipeline we implemented to achieved full end to end automation. This included
+                            automated testing before deploying changes pushed to the development branch.</p>
+                        </div>
+                        <div class="card-footer" style="height:80px;">
+                            <a href="https://www.jenkins.io/" class="aligner btn btn-primary">Find Out More!</a>
+                    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 scroller">
+                    <div class="shadow-card card h-100">
+                        <img class="opaque card-img-top text-center" src="static/square_logos/docker_logo_cropped.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+                       <div class="card-body">
+                           <h2>Docker</h2>
+                           <h4 class="card-title">Containerisation</h4>
+                           <p class="card-text">Docker is a tool that wraps up (into a container) the code of an application with all of its dependencies
+                               and virtualises an OS so that the containerised application can be run easily and swiftly on any system.
+                         Our python app and its dependencies were wrapped up in a Container for OS-independent deployment.</p>
+                        </div>
+                        <div class="card-footer" style="height:80px;">
+                            <a href="https://www.docker.com/" class="aligner btn btn-primary">Find Out More!</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="col-lg-3 col-md-6 mb-4 scroller">
+                <div class="shadow-card card h-100">
+                    <img class="opaque card-img-top text-center" src="static/square_logos/teams_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+                    <div class="card-body">
+                    <h2>Microsoft Teams</h2>
+                    <h4 class="card-title">Communication</h4>
+                    <p class="card-text">
+                        Good and effective communication is the lifeblood of large projects, especially when there are
+                        multiple teams working towards the same goal. Each group had their own call on Teams to communicate with one another.
+                        The fact that all of the teams were using the same platform made it easy to grab someone from another team to
+                        discuss linking each groups work together.
+                    </p>
+                </div>
+                
+                <div class="card-footer" style="height:80px;">
+                    <a href="https://www.microsoft.com/en-gb/microsoft-365/microsoft-teams/group-chat-software" class="aligner btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4 scroller">
+                <div class="shadow-card card h-100">
+                    <img class="opaque card-img-top text-center" src="static/square_logos/agile_logo.png" alt="" style="display:block; margin-left:auto; margin-right: auto; width:auto; height:200px;">
+                    <div class="card-body">
+                        <h2>Agile</h2>
+                        <h4 class="card-title">Scrum Framework</h4>
+                        <p class="card-text">The Agile methodology focuses on the rapid delivery of increments throughout the duration of the project.
+                            We utilised this style of development within the Scrum framework to establish good communication between the teams and ensure
+                            that we always had something to show at the end of each day. Our Trello board was constantly updated as progress was made
+                            and everyone was brought up to speed with the progress of each team during daily scrums and sprint reviews.</p>
+                        </div>
+                        <div class="card-footer" style="height:80px;">
+                            <a href="https://agilemanifesto.org/" class="aligner btn btn-primary">Find Out More!</a>
+            </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 scroller">
+            <div class="shadow-card card h-100">
+              <img class="opaque card-img-top text-center" src="static/square_logos/python_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+              <div class="card-body">
+                  <h2>Python</h2>
+                <h4 class="card-title">Programming Language</h4>
+                <p class="card-text">Python is an easy to learn and powerful language that utilises the object oriented paradigm. Our web
+                scraping application is written in Python, and the first batch of tests for this project were performed in Python with a TDD approach.</p>
+            </div>
+            <div class="card-footer" style="height:80px;">
+                <a href="https://www.python.org/" class="aligner btn btn-primary">Find Out More!</a>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-6 mb-4 scroller">
+        <div class="shadow-card card h-100">
+            <img class="opaque card-img-top text-center" src="static/square_logos/flask_logo.jpg" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+            <div class="card-body">
+                <h2>Flask</h2>
+                <h4 class="card-title">Web framework</h4>
+                <p class="card-text">Flask is a web focused microframework written in Python that allows for simple and scaleable web applications.
+                    This microframework was used to create the frontend for the application.</p>
+                </div>
+                <div class="card-footer" style="height:80px;">
+                <a href="https://flask.palletsprojects.com/en/1.1.x/" class="aligner btn btn-primary">Find Out More!</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 scroller">
+              <div class="shadow-card card h-100">
+                  <img class="opaque card-img-top text-center" src="static/square_logos/github_logo_cropped.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+              <div class="card-body">
+                <h2>GitHub</h2>
+                <h4 class="card-title">Version Control</h4>
+                <p class="card-text">GitHub was used to keep track of the progress made by each team, and ensure that there
+                    were stable builds to fall back on if things went wrong. It also facilitated multiple people to
+                    work on the same project in different branches that were later merged.</p>
+                </div>
+              <div class="card-footer" style="height:80px;">
+                <a href="https://www.github.com" class="aligner btn btn-primary">Find Out More!</a>
+                
+            </div>
+        </div>
+    </div>
+    
+        
+        <div class="col-lg-3 col-md-6 mb-4 scroller">
+            <div class="shadow-card card h-100">
+               <img class="opaque card-img-top text-center" src="static/square_logos/terraform_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+               <div class="card-body">
+                   <h2>Terraform</h2>
+                   <h4 class="card-title">Infrastructure as Code</h4>
+                   <p class="card-text">Terraform is a tool for building, changing,
+                       and versioning infrastructure safely and efficiently.
+                       Terraform can manage existing and popular service providers as well as custom in-house solutions.
+                    </p>
+                </div>
+                <div class="card-footer" style="height:80px;">
+                 <a href="https://www.terraform.io/" class="aligner btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 scroller">
+            <div class="shadow-card card h-100">
+               <img class="opaque card-img-top text-center" src="static/square_logos/ansible_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+               <div class="card-body">
+                   <h2>Ansible</h2>
+                   <h4 class="card-title">Infrastructure as Code</h4>
+                   <p class="card-text">Ansible is a tool used in provisioning and configuration management. It provides simple but powerful automation for cross-platform computer support.
+                       Ansible achieves such things through the use of Ansible playbooks, containing procedural code written in YAML.
+                    </p>
+                </div>
+                <div class="card-footer" style="height:80px;">
+                 <a href="https://www.ansible.com/" class="aligner btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4 scroller">
+                <div class="shadow-card card h-100">
+                    <img class="opaque card-img-top text-center" src="static/square_logos/netdata_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+                    <div class="card-body">
+                        <h2>Netdata</h2>
+                        <h4 class="card-title">Monitoring</h4>
+                        <p class="card-text">Netdata is a monitoring software that can be integrated within AWS to identify health problems with our running infrastructure and send notifications alerting the team if something has gone wrong.</p>
+                    </div>
+                    <div class="card-footer" style="height:80px;">
+                        <a href="https://aws.amazon.com/" class="aligner btn btn-primary">Find Out More!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <footer class="py-3" style="background-color:#01181b; letter-spacing:0.13em;">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright © Engineering 74</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
