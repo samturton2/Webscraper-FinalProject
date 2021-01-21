@@ -2,7 +2,7 @@ FROM python:3.8 AS app
 
 WORKDIR /usr/src/flaskapp
 
-COPY flaskapp/ .
+COPY . .
 
 RUN pip install -r requirements.txt
 
