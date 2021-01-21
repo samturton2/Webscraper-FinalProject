@@ -30,7 +30,7 @@
 </head>
 
 <body0>
-
+    
     <!-- Navigation bar -->
     <div id="navigationbar" style="color:white;">
         <div id="left">
@@ -45,7 +45,7 @@
           </p>
       </div>
     </div>
-
+    
     <!-- {% block content %} {% endblock %} -->
     <div style="padding-top:63px; width:90%; margin-right:auto; margin-left:auto; letter-spacing:0.15em; text-align:center;">
       <table class="table table-hover">
@@ -62,21 +62,21 @@
           </thead>
           <tbody>
             {% for value in joblist %}
-                <tr>
-                  <td>{{ value[0] }}</td>
-                  <td>{{ value[1] }}</td>
-                  <td>{{ value[2] }}</td>
-                  <td>{{ value[3] }}</td>
-                  <td>{{ value[4] }}</td>
-                  <td>{{ value[5] }}</td>
-                  <td>{{ value[6] }}</td>
-                </tr>
-            {% endfor %}
+            <tr>
+              <td>{{ value[0] }}</td>
+              <td>{{ value[1] }}</td>
+              <td>{{ value[2] }}</td>
+              <td>{{ value[3] }}</td>
+              <td>{{ value[4] }}</td>
+              <td>{{ value[5] }}</td>
+              <td>{{ value[6] }}</td>
+            </tr>
+        {% endfor %}
 
           </tbody>
         </table>
   </div>
-
+  
 
     <footer class="py-3" style="background-color: #01181b">
         <div class="container">

@@ -4,8 +4,13 @@
 <head>
     <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <title>Home | Sparta Global</title>
     <style>
+        @media screen and (max-width:700px){
+            #mainlinks img{width:35px}
+        }
         body{overflow-y: scroll; font-family:'Verdana', Helvetica, sans-serif;}
         
         p{letter-spacing:0.13em;}
@@ -17,7 +22,7 @@
         #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
         
         div#navigationbar{z-index:1; width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
-        div#navigationbar > div#left{float:left;}
+        div#navigationbar > div#left{float:left; padding-left:20px;}
         
         div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
         
@@ -45,41 +50,51 @@
     </div>
     <div id="content">
 
-        <div id="homepageinner" style="font-size:1.8em; background-color:rgb(197, 218, 79);">
-            <img src="static/Sparta-global-logo-white.svg" style="width:30%">
+        <!-- <div id="homepageinner" style="font-size:1.8em; background-color:rgb(198, 101, 255);">
             <br>
             <br>
             <p style="font-weight:bold; font-size:2em;">Engineering 74 DevOps</p>
             <p style="font-weight:bold; font-size:2em;">Final Project</p>
             <p>End-to-end automation</p>
+        </div> -->
+        
+        <div class="jumbotron jumbotron-fluid" style="text-align:center; padding-top:100px; background-color:rgb(194, 79, 194);">
+            <img src="static/Sparta-global-logo-white.svg" style="width:30%">
+            <div class="container">
+                <hr>
+                <br>
+              <p class="lead" style="font-size:2.51em; font-weight:bold;">Engineering 74</p>
+              <p class="lead" style="font-size:2.51em; font-weight:bold;">Final Project</p>
+            </div>
         </div>
+
 
         <div id="homepageinner" style="background-color:rgb(218, 218, 218);">
             <p  style="font-size:2em;">Main Links</p>
             <hr>
-            <div id="mainlinks" style="font-size:1.2em">
+            <div id="mainlinks" style="font-size:1.2em; width:100%; overflow-x:hidden; border-radius:20%;">
                 <p>
                     <a href="https://github.com/jatkin-wasti/final-project-front-end" target="_blank">
-                        <img src="static/home/git.png" height=auto width=90px>
+                        <img src="static/home/git.png" height=auto width=70px>
                     </a>
                     &nbsp; &nbsp; &nbsp; 
                     <a href="https://github.com/samturton2/FinalProject-webscraper" target="_blank">
-                        <img src="static/home/git.png" height=auto width=90px>
+                        <img src="static/home/git.png" height=auto width=70px>
                     </a>
                     &nbsp; &nbsp; &nbsp; 
                     <a href="https://github.com/ldaijiw/eng74_final_project" target="_blank">
-                        <img src="static/home/git.png" height=auto width=90px>
+                        <img src="static/home/git.png" height=auto width=70px>
                     </a>
                     &nbsp; &nbsp; &nbsp; 
                     <a href="https://hub.docker.com/repository/docker/amaanhub/eng74_final_project" target="_blank">
-                        <img src="static/home/dockerhub.png" height=auto width=90px>
+                        <img src="static/home/dockerhub.png" height=auto width=70px>
                     </a>
                 </p>
             </div>
         </div>
         
     
-        <div id="homepageinner" style="text-align:center; font-size:1.2em; background-color:rgb(218, 218, 218);">
+        <div id="homepageinner" style="text-align:center; font-size:1em; background-color:rgb(218, 218, 218);">
             <p style="font-size:2em;">FAQ</p>
             
             <hr>
