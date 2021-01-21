@@ -14,3 +14,4 @@ Flask is a python-based web development framework. It provides access to a large
 - A webhook is needed in the git repository.
 `<jenkins server url>/github-webhook/`
 
+- The ssh pub key is uploaded to the repo, and private key is used in jenkins to monitor any changes on the development branches.
