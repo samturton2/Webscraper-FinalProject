@@ -45,7 +45,7 @@ def no_headers():
     live_response = requests.get("https://www.itjobswatch.co.uk/")
 
     if live_response.status_code:
-        cwd=os.getcwd() +"/"
+        cwd = os.getcwd() + "/"
         top_30 = ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
         Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(),
                                                 cwd, 'ItJobsWatchTop30s3.csv',
@@ -53,16 +53,27 @@ def no_headers():
         try:
             upload_file("ItJobsWatchTop30s3.csv", "eng74-final-project-bucket")
             download_file("eng74-final-project-bucket", "ItJobsWatchTop30s3.csv")
+            filename="ItJobsWatchTop30s3.csv"
         except:
-            pass
-    # # If not then just download the s3 bucket data
+            Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(),
+                                                    cwd, 'ItJobsWatchTop30local.csv',
+                                                    top_30.get_table_headers_array())
+            filename="ItJobsWatchTop30local.csv"
+
+        # # If not then just download the s3 bucket data
     else:
         try:
-            download_file("eng74-final-project-bucket", "ItJobsWatchTop30.csv")
+            download_file("eng74-final-project-bucket", "ItJobsWatchTop30s3.csv")
+            filename = "ItJobsWatchTop30s3.csv"
         except:
-            pass
+            cwd = os.getcwd() + "/"
+            top_30 = ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
+            Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(),
+                                                    cwd, 'ItJobsWatchTop30local.csv',
+                                                    top_30.get_table_headers_array())
+            filename = "ItJobsWatchTop30local.csv"
 
-    filename="ItJobsWatchTop30s3.csv"
+    # filename="ItJobsWatchTop30s3.csv"
     data = pandas.read_csv(filename, header=0)
     joblist = list(data.values)
     return render_template('list.html', joblist=joblist)

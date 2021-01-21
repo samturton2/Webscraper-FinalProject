@@ -8,16 +8,21 @@
     <title>ToolChain | Sparta Global</title>
 
     <style>
+        @media screen and (max-height:900px){
+            .scroller{font-size:0.8em; max-width:40vw; }
+        }
+
+
         html{overflow-y:scroll;}
         p{letter-spacing:0.13em;}
         body{font-family:'Verdana', Helvetica, sans-serif;}
         a:hover{color: #8f8a8a;}
         div#navigationbar a:hover{color: #a8a8a8; text-decoration:none;}
         #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
-        
+
         div#navigationbar{z-index:1; width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
-        div#navigationbar > div#left{float:left;}
-        
+        div#navigationbar > div#left{float:left; padding-left:20px;}
+
         div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
 
         .scroller{flex:0 0 auto;}
@@ -25,7 +30,7 @@
 
     <style>
         html {box-sizing:border-box;}
-        
+
         *, *:before, *:after {
           box-sizing: inherit;
         }
@@ -58,7 +63,7 @@
 </head>
 
 
-<body>
+<body style="height:100%;">
     <!-- NAVIGATION BAR -->
     <div id="navigationbar" style="color:white;">
         <div id="left">
@@ -74,12 +79,11 @@
         </div>
     </div>
 
-    
 
-    <div style="width:100%;">
 
-        <div style="display:flex; flex-wrap:nowrap; overflow-x:auto; text-align:center; padding-top:24px;">
-            
+    <div style="width:100%; height:100%;">
+
+        <div id="push" style="display:flex; flex-wrap:nowrap; overflow-x:auto; text-align:center; padding-top:24px; height:100%;">
 
             <div class="col-lg-3 col-md-6 mb-4 scroller">
                 <div class="shadow-card card h-100">
@@ -93,7 +97,7 @@
                         </div>
                         <div class="card-footer" style="height:80px;">
                             <a href="https://aws.amazon.com/" class="aligner btn btn-primary">Find Out More!</a>
-                            
+
                         </div>
                  </div>
                 </div>
@@ -104,14 +108,14 @@
                <div class="card-body">
                    <h2>AWS S3</h2>
                    <h4 class="card-title">Cloud Computing</h4>
-                   <p class="card-text">Within AWS, we have used their Simple Storage Service to store past versions of scraped data. 
+                   <p class="card-text">Within AWS, we have used their Simple Storage Service to store past versions of scraped data.
                        The main aspect of this choice was the great integration S3 has with monitoring services like CloudWatch as well as giving us great flexibility when it comes to storage.
                        Deciding on adding a database was primarily driven by the need for a disaster recovery plan, in cases where the website might go down etc.
                    </p>
                     </div>
                     <div class="card-footer" style="height:80px;">
                         <a href="https://aws.amazon.com/" class="aligner btn btn-primary">Find Out More!</a>
-                        
+
                     </div>
              </div>
             </div>
@@ -127,11 +131,11 @@
                         </div>
                         <div class="card-footer" style="height:80px;">
                             <a href="https://www.jenkins.io/" class="aligner btn btn-primary">Find Out More!</a>
-                    
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-3 col-md-6 mb-4 scroller">
                     <div class="shadow-card card h-100">
                         <img class="opaque card-img-top text-center" src="static/square_logos/docker_logo_cropped.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -144,11 +148,11 @@
                         </div>
                         <div class="card-footer" style="height:80px;">
                             <a href="https://www.docker.com/" class="aligner btn btn-primary">Find Out More!</a>
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
             <div class="col-lg-3 col-md-6 mb-4 scroller">
                 <div class="shadow-card card h-100">
                     <img class="opaque card-img-top text-center" src="static/square_logos/teams_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -162,13 +166,13 @@
                         discuss linking each groups work together.
                     </p>
                 </div>
-                
+
                 <div class="card-footer" style="height:80px;">
                     <a href="https://www.microsoft.com/en-gb/microsoft-365/microsoft-teams/group-chat-software" class="aligner btn btn-primary">Find Out More!</a>
                 </div>
             </div>
         </div>
-            
+
             <div class="col-lg-3 col-md-6 mb-4 scroller">
                 <div class="shadow-card card h-100">
                     <img class="opaque card-img-top text-center" src="static/square_logos/agile_logo.png" alt="" style="display:block; margin-left:auto; margin-right: auto; width:auto; height:200px;">
@@ -185,7 +189,7 @@
             </div>
             </div>
         </div>
-        
+
         <div class="col-lg-3 col-md-6 mb-4 scroller">
             <div class="shadow-card card h-100">
               <img class="opaque card-img-top text-center" src="static/square_logos/python_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -197,11 +201,11 @@
             </div>
             <div class="card-footer" style="height:80px;">
                 <a href="https://www.python.org/" class="aligner btn btn-primary">Find Out More!</a>
-                
+
             </div>
         </div>
     </div>
-    
+
     <div class="col-lg-3 col-md-6 mb-4 scroller">
         <div class="shadow-card card h-100">
             <img class="opaque card-img-top text-center" src="static/square_logos/flask_logo.jpg" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -216,7 +220,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-6 mb-4 scroller">
               <div class="shadow-card card h-100">
                   <img class="opaque card-img-top text-center" src="static/square_logos/github_logo_cropped.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -229,12 +233,12 @@
                 </div>
               <div class="card-footer" style="height:80px;">
                 <a href="https://www.github.com" class="aligner btn btn-primary">Find Out More!</a>
-                
+
             </div>
         </div>
     </div>
-    
-        
+
+
         <div class="col-lg-3 col-md-6 mb-4 scroller">
             <div class="shadow-card card h-100">
                <img class="opaque card-img-top text-center" src="static/square_logos/terraform_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -251,7 +255,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="col-lg-3 col-md-6 mb-4 scroller">
             <div class="shadow-card card h-100">
                <img class="opaque card-img-top text-center" src="static/square_logos/ansible_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -267,7 +271,24 @@
                 </div>
             </div>
         </div>
-            
+
+        <div class="col-lg-3 col-md-6 mb-4 scroller">
+            <div class="shadow-card card h-100">
+               <img class="opaque card-img-top text-center" src="static/square_logos/packer_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
+               <div class="card-body">
+                   <h2>Packer</h2>
+                   <h4 class="card-title">AMI Creation</h4>
+                   <p class="card-text">
+                    Packer is a Hashicorp tool that automates the creation of machine images. This has been
+                    used to create the Amazon Machine images that have acted as a template for the EC2 instances that we've created.
+                    </p>
+                </div>
+                <div class="card-footer" style="height:80px;">
+                 <a href="https://www.packer.io/" class="aligner btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+
             <div class="col-lg-3 col-md-6 mb-4 scroller">
                 <div class="shadow-card card h-100">
                     <img class="opaque card-img-top text-center" src="static/square_logos/netdata_logo.png" alt="" style="display:block; margin-left: auto; margin-right: auto; width:auto; height:200px;">
@@ -277,13 +298,13 @@
                         <p class="card-text">Netdata is a monitoring software that can be integrated within AWS to identify health problems with our running infrastructure and send notifications alerting the team if something has gone wrong.</p>
                     </div>
                     <div class="card-footer" style="height:80px;">
-                        <a href="https://aws.amazon.com/" class="aligner btn btn-primary">Find Out More!</a>
+                        <a href="https://www.netdata.cloud/" class="aligner btn btn-primary">Find Out More!</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <footer class="py-3" style="background-color:#01181b; letter-spacing:0.13em;">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright © Engineering 74</p>
