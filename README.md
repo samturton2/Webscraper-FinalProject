@@ -9,3 +9,4 @@ MVC is a software approach used to organise code. The MVC method establishes 3 s
 
 # What is Flask
 Flask is a python-based web development framework. It provides access to a large collection of reusable code and extensions.
+
